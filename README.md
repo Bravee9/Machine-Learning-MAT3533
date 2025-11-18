@@ -6,6 +6,8 @@ Comprehensive implementation of fundamental machine learning algorithms from pro
 
 This repository contains 9 weeks of practical machine learning implementations covering core algorithms and techniques. Each week builds upon previous concepts, progressing from classical statistical methods to modern deep learning approaches.
 
+Course materials from VNU University of Science, Hanoi - Machine Learning (MAT 3533) - Academic Year 2025-2026
+
 ## Course Structure
 
 | Week | Topic | Algorithms | Dataset |
@@ -32,8 +34,8 @@ This repository contains 9 weeks of practical machine learning implementations c
 ## Installation
 
 ```bash
-git clone https://github.com/Bravee9/ML-Fundamentals.git
-cd ML-Fundamentals
+git clone https://github.com/Bravee9/Machine-Learning-MAT3533.git
+cd Machine-Learning-MAT3533
 pip install -r requirements.txt
 ```
 
@@ -164,8 +166,3 @@ MIT License
 Bui Quang Chien
 - GitHub: [@Bravee9](https://github.com/Bravee9)
 - Student ID: 23001837
-
-## Acknowledgments
-
-Course materials from VNU University of Science, Hanoi
-Machine Learning course (MAT 3533) - Academic Year 2025-2026
