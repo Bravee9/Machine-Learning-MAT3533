@@ -93,9 +93,11 @@ Here's a simple example using Logistic Regression:
 from algorithms.supervised import LogisticRegression
 from utils.preprocessing import StandardScaler, train_test_split
 from utils.evaluation import accuracy_score
+import numpy as np
 
-# Load your data
-X, y = load_your_data()
+# Generate sample data
+X = np.random.randn(200, 2)
+y = (X[:, 0] + X[:, 1] > 0).astype(int)
 
 # Split data
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
@@ -115,6 +117,24 @@ accuracy = accuracy_score(y_test, predictions)
 print(f"Accuracy: {accuracy:.4f}")
 ```
 
+### Running Examples
+
+Run the test script to verify installation:
+```bash
+python test_implementations.py
+```
+
+Run individual examples:
+```bash
+python run_example.py 1  # Classification
+python run_example.py 2  # Regression
+python run_example.py 3  # Clustering
+python run_example.py 4  # Dimensionality Reduction
+python run_example.py 5  # Neural Networks
+python run_example.py 6  # Model Selection
+python run_example.py 7  # Complete Pipeline
+```
+
 ## 📖 Examples
 
 The `examples/` directory contains comprehensive demonstrations:
@@ -125,12 +145,9 @@ The `examples/` directory contains comprehensive demonstrations:
 4. **Dimensionality Reduction** - PCA and t-SNE
 5. **Neural Networks** - Deep learning from scratch
 6. **Model Selection** - Hyperparameter tuning and cross-validation
+7. **Complete Pipeline** - End-to-end ML workflow
 
-Run any example:
-```bash
-cd examples
-python 01_classification_example.py
-```
+See `examples/README.md` for detailed information.
 
 ## 📁 Project Structure
 

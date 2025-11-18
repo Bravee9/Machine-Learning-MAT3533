@@ -11,7 +11,27 @@ Install the required dependencies:
 pip install -r ../requirements.txt
 ```
 
+### Running Examples
+
+**From the root directory (recommended):**
+```bash
+python run_example.py 1  # Classification
+python run_example.py 2  # Regression
+python run_example.py 3  # Clustering
+python run_example.py 4  # Dimensionality Reduction
+python run_example.py 5  # Neural Networks
+python run_example.py 6  # Model Selection
+python run_example.py 7  # Complete Pipeline
+```
+
+**Or run the test suite:**
+```bash
+python test_implementations.py
+```
+
 ### Example Files
+
+All examples can be run using the `run_example.py` script from the root directory.
 
 #### 1. Classification (`01_classification_example.py`)
 Demonstrates supervised classification with multiple algorithms:
@@ -23,7 +43,7 @@ Demonstrates supervised classification with multiple algorithms:
 
 **Run:**
 ```bash
-python 01_classification_example.py
+python run_example.py 1
 ```
 
 #### 2. Regression (`02_regression_example.py`)
@@ -34,7 +54,7 @@ Demonstrates linear regression with different methods:
 
 **Run:**
 ```bash
-python 02_regression_example.py
+python run_example.py 2
 ```
 
 #### 3. Clustering (`03_clustering_example.py`)
@@ -46,7 +66,7 @@ Demonstrates unsupervised clustering algorithms:
 
 **Run:**
 ```bash
-python 03_clustering_example.py
+python run_example.py 3
 ```
 
 #### 4. Dimensionality Reduction (`04_dimensionality_reduction_example.py`)
@@ -58,7 +78,7 @@ Demonstrates dimensionality reduction techniques:
 
 **Run:**
 ```bash
-python 04_dimensionality_reduction_example.py
+python run_example.py 4
 ```
 
 #### 5. Neural Networks (`05_neural_network_example.py`)
@@ -70,7 +90,7 @@ Demonstrates deep learning with feedforward neural networks:
 
 **Run:**
 ```bash
-python 05_neural_network_example.py
+python run_example.py 5
 ```
 
 #### 6. Model Selection (`06_model_selection_example.py`)
@@ -82,7 +102,22 @@ Demonstrates hyperparameter tuning and model selection:
 
 **Run:**
 ```bash
-python 06_model_selection_example.py
+python run_example.py 6
+```
+
+#### 7. Complete Pipeline (`07_complete_pipeline_example.py`)
+Demonstrates end-to-end machine learning workflow:
+- Data generation and preprocessing
+- Exploratory analysis with clustering
+- Dimensionality reduction
+- Multiple model training
+- Cross-validation
+- Hyperparameter tuning
+- Final evaluation and metrics
+
+**Run:**
+```bash
+python run_example.py 7
 ```
 
 ## Output
