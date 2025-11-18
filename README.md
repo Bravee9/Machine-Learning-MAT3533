@@ -168,4 +168,4 @@ Bui Quang Chien
 ## Acknowledgments
 
 Course materials from VNU University of Science, Hanoi
-Machine Learning course (HUS 3533 1) - Academic Year 2025-2026
+Machine Learning course (MAT 3533) - Academic Year 2025-2026
