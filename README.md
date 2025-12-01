@@ -4,7 +4,7 @@ Comprehensive implementation of fundamental machine learning algorithms from pro
 
 ## Overview
 
-This repository contains 9 weeks of practical machine learning implementations covering core algorithms and techniques. Each week builds upon previous concepts, progressing from classical statistical methods to modern deep learning approaches.
+This repository contains 10 weeks of practical machine learning implementations covering core algorithms and techniques. Each week builds upon previous concepts, progressing from classical statistical methods to modern deep learning approaches and unsupervised learning.
 
 Course materials from VNU University of Science, Hanoi - Machine Learning (MAT 3533) - Academic Year 2025-2026
 
@@ -21,6 +21,7 @@ Course materials from VNU University of Science, Hanoi - Machine Learning (MAT 3
 | 7 | Linear Discriminant | LDA | MNIST Digits, Face Recognition |
 | 8 | Neural Networks Basics | Perceptron | Sonar, Portfolio Analysis |
 | 9 | Deep Learning | Multi-Layer Perceptron | Dry Bean (7 classes), SAT-GPA |
+| 10 | Clustering Algorithms | K-Means, DBSCAN | MNIST Digits (5000 samples), Synthetic Data |
 
 ## Technical Stack
 
@@ -75,8 +76,12 @@ ML-Fundamentals/
 │   ├── perceptron.ipynb
 │   ├── data/
 │   └── README.md
-└── week-09-mlp/
-    ├── mlp.ipynb
+├── week-09-mlp/
+│   ├── mlp.ipynb
+│   ├── data/
+│   └── README.md
+└── week-10-kmean-dbscan/
+    ├── kmeans_dbscan.ipynb
     ├── data/
     └── README.md
 ```
