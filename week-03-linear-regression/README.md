@@ -1,63 +1,81 @@
 # Week 3: Linear Regression
 
-## Algorithm
+**English** | [Tiếng Việt](#tiếng-việt)
 
-Linear regression for continuous variable prediction. Implements ordinary least squares (OLS) method for finding the best-fitting linear relationship between features and target variables.
+## Overview
 
-## Datasets
+Continuous variable prediction using ordinary least squares (OLS) linear regression. Implements simple and multiple linear regression for modeling relationships between features and targets.
 
-### 1. SAT-GPA Prediction
-- 86 student records
-- Feature: SAT scores
-- Target: GPA (Grade Point Average)
-- Simple linear regression example
+## Dataset
 
-### 2. Fuel Consumption
-- Vehicle fuel efficiency data
-- Multiple vehicle characteristics
-- Target: Fuel consumption rate
+- **SAT-GPA**: 86 students, SAT scores to GPA prediction
+- **Fuel Consumption**: Vehicle characteristics and fuel efficiency
+- Simple and multiple feature regression examples
 
-### 3. Additional Examples
-- Various regression scenarios
-- Multiple feature datasets
+## Key Concepts
 
-Files:
-- `SAT_GPA - SAT_GPA.csv`
-- `fuel.txt`
-- `vidu3_lin_reg.txt`
-- `vidu4_lin_reg.txt`
+- Ordinary Least Squares (OLS)
+- Cost function minimization
+- Gradient descent optimization
+- Model evaluation metrics (R², MSE, RMSE)
 
 ## Implementation
 
-### Key Concepts
-- Ordinary Least Squares (OLS)
-- Cost function minimization
-- Gradient descent
-- Model evaluation metrics (R², MSE, RMSE)
-
-### Methods
 - Simple linear regression (single feature)
 - Multiple linear regression
 - Manual implementation and scikit-learn
-- Residual analysis
+- Residual analysis and diagnostics
 
 ## Results
 
 - Regression coefficients interpretation
 - Goodness of fit (R² scores)
-- Prediction accuracy
-- Residual plots and diagnostics
+- Prediction accuracy metrics
+- Residual plots and model validation
 
 ## Usage
 
-```python
+```bash
 jupyter notebook linear_regression.ipynb
 ```
 
-## Key Learnings
+---
 
-- Linear relationship modeling
-- Assumptions of linear regression
-- Outlier impact on model performance
-- Feature scaling importance
-- Model validation techniques
+## Tiếng Việt
+
+## Tổng quan
+
+Dự đoán biến liên tục sử dụng hồi quy tuyến tính bình phương tối thiểu (OLS). Triển khai hồi quy tuyến tính đơn và đa biến để mô hình hóa mối quan hệ giữa đặc trưng và mục tiêu.
+
+## Dữ liệu
+
+- **SAT-GPA**: 86 sinh viên, dự đoán GPA từ điểm SAT
+- **Tiêu thụ nhiên liệu**: Đặc điểm phương tiện và hiệu suất nhiên liệu
+- Ví dụ hồi quy đơn và đa biến
+
+## Khái niệm chính
+
+- Bình phương tối thiểu (OLS)
+- Tối thiểu hóa hàm chi phí
+- Tối ưu hóa gradient descent
+- Các chỉ số đánh giá mô hình (R², MSE, RMSE)
+
+## Triển khai
+
+- Hồi quy tuyến tính đơn (một đặc trưng)
+- Hồi quy tuyến tính đa biến
+- Cài đặt thủ công và scikit-learn
+- Phân tích phần dư và chẩn đoán
+
+## Kết quả
+
+- Giải thích hệ số hồi quy
+- Độ phù hợp (điểm R²)
+- Các chỉ số độ chính xác dự đoán
+- Biểu đồ phần dư và kiểm định mô hình
+
+## Sử dụng
+
+```bash
+jupyter notebook linear_regression.ipynb
+```

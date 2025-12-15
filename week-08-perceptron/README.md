@@ -1,63 +1,87 @@
 # Week 8: Perceptron
 
+**English** | [Tiếng Việt](#tiếng-việt)
+
 ## Overview
 
-Implementation of the Perceptron algorithm, the foundation of neural networks. Applied to binary classification problems with linearly separable data.
+Foundation of neural networks: the Perceptron algorithm for binary linear classification. Implements online learning with weight update rules.
 
-## Algorithm
+## Dataset
 
-The Perceptron is a linear binary classifier:
-
-f(x) = sign(w · x + b)
-
-Learning rule:
-- w = w + η * (y - ŷ) * x
-- b = b + η * (y - ŷ)
-
-Where η is the learning rate, y is true label, and ŷ is prediction.
-
-## Datasets
-
-**1. Sonar Dataset**
-- 208 samples: Rock vs Mine classification
-- 60 features: Sonar signal frequencies
-- Binary classification challenge
-- Non-trivial decision boundary
-
-**2. Portfolio Analysis Dataset**
-- Financial task classification
-- Multiple numerical features
-- Binary outcome prediction
-
-## Implementation Details
-
-- Weight initialization strategies
-- Learning rate selection
-- Convergence criteria
-- Epoch-based training
-- Decision boundary visualization
-- Performance monitoring per epoch
-
-## Results
-
-Training analysis:
-- Convergence behavior over epochs
-- Final accuracy and error rate
-- Weight vector interpretation
-- Decision boundary geometry
-
-Performance metrics:
-- Classification accuracy
-- Confusion matrix
-- True positive/negative rates
-- Training time analysis
+- **Sonar**: 208 samples, Rock vs Mine classification, 60 frequency features
+- **Portfolio Analysis**: Financial task classification, binary outcomes
+- Linearly separable and challenging decision boundaries
 
 ## Key Concepts
 
-- Linear separability requirement
-- Online learning algorithm
-- Weight update rule derivation
+- Linear binary classifier: f(x) = sign(w · x + b)
+- Weight update rule: w = w + η(y - ŷ)x
+- Learning rate selection
 - Perceptron convergence theorem
-- Limitations with non-linearly separable data
-- Foundation for multi-layer neural networks
+- Linear separability requirement
+
+## Implementation
+
+- Weight initialization strategies
+- Epoch-based training with convergence criteria
+- Decision boundary visualization
+- Performance monitoring per epoch
 - Bias term importance
+
+## Results
+
+- Convergence behavior over epochs
+- Classification accuracy and error rate
+- Weight vector interpretation
+- Decision boundary geometry
+- Training time analysis
+
+## Usage
+
+```bash
+jupyter notebook perceptron.ipynb
+```
+
+---
+
+## Tiếng Việt
+
+## Tổng quan
+
+Nền tảng của mạng nơ-ron: thuật toán Perceptron cho phân loại tuyến tính nhị phân. Triển khai học trực tuyến với quy tắc cập nhật trọng số.
+
+## Dữ liệu
+
+- **Sonar**: 208 mẫu, phân loại Đá vs Mìn, 60 đặc trưng tần số
+- **Phân tích danh mục**: Phân loại nhiệm vụ tài chính, kết quả nhị phân
+- Ranh giới quyết định có thể phân tách tuyến tính và khó
+
+## Khái niệm chính
+
+- Phân loại nhị phân tuyến tính: f(x) = sign(w · x + b)
+- Quy tắc cập nhật trọng số: w = w + η(y - ŷ)x
+- Lựa chọn tốc độ học
+- Định lý hội tụ Perceptron
+- Yêu cầu phân tách tuyến tính
+
+## Triển khai
+
+- Chiến lược khởi tạo trọng số
+- Huấn luyện theo epoch với tiêu chí hội tụ
+- Trực quan hóa ranh giới quyết định
+- Giám sát hiệu suất theo epoch
+- Tầm quan trọng của bias
+
+## Kết quả
+
+- Hành vi hội tụ qua các epoch
+- Độ chính xác phân loại và tỷ lệ lỗi
+- Giải thích vector trọng số
+- Hình học ranh giới quyết định
+- Phân tích thời gian huấn luyện
+
+## Sử dụng
+
+```bash
+jupyter notebook perceptron.ipynb
+```

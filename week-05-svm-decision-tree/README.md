@@ -1,81 +1,85 @@
 # Week 5: Support Vector Machines and Decision Trees
 
-## Algorithms
+**English** | [Tiếng Việt](#tiếng-việt)
 
-### 1. Support Vector Machines (SVM)
-Maximum margin classifier with kernel methods for linear and non-linear decision boundaries.
+## Overview
 
-### 2. Decision Trees
-Tree-based classifier using recursive feature splitting. Non-parametric supervised learning method.
+Maximum margin classification with SVM using kernel methods, and tree-based classification with Decision Trees for interpretable predictions.
 
-## Datasets
+## Dataset
 
-### 1. Glass Classification
-- 214 glass samples
-- 6 types of glass
-- 9 chemical composition features
-- Multi-class classification
+- **Glass**: 214 samples, 6 types, 9 chemical features
+- **Iris**: 150 samples, 3 species, 4 morphological features
+- **MNIST**: 70,000 digit images (28x28 pixels), 10 classes
 
-### 2. Iris Dataset
-- 150 iris flower samples
-- 3 species
-- 4 morphological features
-- Classic ML benchmark dataset
+## Key Concepts
 
-### 3. MNIST Handwritten Digits
-- 70,000 digit images (28x28 pixels)
-- 10 classes (digits 0-9)
-- 784 features per image
-- Image classification benchmark
-
-Files:
-- `glass.csv`
-- `iris.csv`
-- `train-images.idx3-ubyte`
-- `train-labels.idx1-ubyte`
-- `t10k-images.idx3-ubyte`
-- `t10k-labels.idx1-ubyte`
+- Maximum margin hyperplane
+- Kernel trick (linear, RBF, polynomial)
+- Support vectors and C parameter
+- Information gain and Gini impurity
+- Recursive partitioning and tree pruning
 
 ## Implementation
 
-### Key Concepts
-
-**Support Vector Machines:**
-- Maximum margin hyperplane
-- Kernel trick (linear, RBF, polynomial)
-- Support vectors
-- C parameter and regularization
-
-**Decision Trees:**
-- Information gain and Gini impurity
-- Recursive partitioning
-- Tree pruning
-- Feature importance
-
-### Methods
 - Linear and non-linear SVM
-- Kernel selection and tuning
+- Kernel selection and hyperparameter tuning
 - Decision tree depth optimization
-- Ensemble methods introduction
+- Feature importance ranking
 
 ## Results
 
 - Multi-class classification accuracy
 - Kernel comparison (linear vs RBF)
 - Decision tree visualization
-- Feature importance ranking
 - MNIST classification performance
+- Feature importance analysis
 
 ## Usage
 
-```python
+```bash
 jupyter notebook svm_decision_tree.ipynb
 ```
 
-## Key Learnings
+---
 
-- Kernel methods for non-linear problems
-- SVM hyperparameter sensitivity
-- Decision tree interpretability
-- Overfitting prevention techniques
-- High-dimensional data handling (MNIST)
+## Tiếng Việt
+
+## Tổng quan
+
+Phân loại biên tối đa với SVM sử dụng phương pháp kernel, và phân loại dựa trên cây với Decision Trees cho dự đoán có thể giải thích.
+
+## Dữ liệu
+
+- **Kính**: 214 mẫu, 6 loại, 9 đặc trưng hóa học
+- **Iris**: 150 mẫu, 3 loài, 4 đặc trưng hình thái
+- **MNIST**: 70,000 ảnh chữ số (28x28 pixel), 10 lớp
+
+## Khái niệm chính
+
+- Siêu phẳng biên tối đa
+- Kernel trick (tuyến tính, RBF, đa thức)
+- Support vectors và tham số C
+- Information gain và Gini impurity
+- Phân chia đệ quy và cắt tỉa cây
+
+## Triển khai
+
+- SVM tuyến tính và phi tuyến
+- Lựa chọn kernel và điều chỉnh siêu tham số
+- Tối ưu hóa độ sâu cây quyết định
+- Xếp hạng mức độ quan trọng của đặc trưng
+
+## Kết quả
+
+- Độ chính xác phân loại đa lớp
+- So sánh kernel (tuyến tính vs RBF)
+- Trực quan hóa cây quyết định
+- Hiệu suất phân loại MNIST
+- Phân tích mức độ quan trọng của đặc trưng
+
+## Sử dụng
+
+```bash
+jupyter notebook svm_decision_tree.ipynb
+```

@@ -1,59 +1,89 @@
 # Week 6: Principal Component Analysis
 
+**English** | [Tiếng Việt](#tiếng-việt)
+
 ## Overview
 
-Implementation of Principal Component Analysis (PCA) for dimensionality reduction. Applied to high-dimensional speech feature data for Parkinson's disease detection.
-
-## Algorithm
-
-PCA transforms data into a new coordinate system where:
-- First principal component has maximum variance
-- Subsequent components have maximum remaining variance
-- Components are orthogonal to each other
-
-Steps:
-1. Standardize the dataset
-2. Compute covariance matrix
-3. Calculate eigenvalues and eigenvectors
-4. Sort components by explained variance
-5. Project data onto principal components
+Dimensionality reduction using Principal Component Analysis (PCA) for high-dimensional speech feature data. Transforms data to maximize variance in reduced dimensions.
 
 ## Dataset
 
-**Parkinson's Disease Speech Features**
-- Total samples: 756 voice recordings
+- **Parkinson's Disease Speech**: 756 voice recordings
 - Original features: 754 speech characteristics
-- Classes: Parkinson's patient (1) / Healthy control (0)
+- Classes: Parkinson's patient vs healthy control
 - High dimensionality challenge
-
-## Implementation Details
-
-- Feature standardization (zero mean, unit variance)
-- Eigenvalue decomposition
-- Scree plot for component selection
-- Cumulative explained variance analysis
-- Dimensionality reduction: 754 to optimal k components
-
-## Results
-
-Analysis:
-- Explained variance ratio per component
-- Cumulative variance preserved
-- Optimal number of components selection
-- Classification performance before/after PCA
-- Visualization in 2D/3D principal component space
-
-Benefits demonstrated:
-- Reduced computational cost
-- Noise filtering
-- Visualization of high-dimensional data
-- Comparable or improved classification accuracy
 
 ## Key Concepts
 
 - Eigenvalue and eigenvector computation
 - Variance maximization
+- Covariance matrix analysis
 - Linear transformation
 - Curse of dimensionality mitigation
-- Feature extraction vs feature selection
-- Interpretability of principal components
+
+## Implementation
+
+- Feature standardization (zero mean, unit variance)
+- Eigenvalue decomposition
+- Scree plot for component selection
+- Cumulative explained variance analysis
+- Dimensionality reduction to optimal k components
+
+## Results
+
+- Explained variance ratio per component
+- Cumulative variance preserved
+- Classification performance before/after PCA
+- 2D/3D visualization in principal component space
+- Noise filtering and computational cost reduction
+
+## Usage
+
+```bash
+jupyter notebook pca.ipynb
+```
+
+---
+
+## Tiếng Việt
+
+## Tổng quan
+
+Giảm chiều dữ liệu sử dụng Phân tích Thành phần Chính (PCA) cho dữ liệu đặc trưng giọng nói đa chiều. Biến đổi dữ liệu để tối đa hóa phương sai trong không gian chiều thấp hơn.
+
+## Dữ liệu
+
+- **Giọng nói bệnh Parkinson**: 756 bản ghi âm
+- Đặc trưng gốc: 754 đặc điểm giọng nói
+- Lớp: Bệnh nhân Parkinson vs người khỏe mạnh
+- Thách thức đa chiều cao
+
+## Khái niệm chính
+
+- Tính toán trị riêng và vector riêng
+- Tối đa hóa phương sai
+- Phân tích ma trận hiệp phương sai
+- Biến đổi tuyến tính
+- Giảm thiểu lời nguyền chiều cao
+
+## Triển khai
+
+- Chuẩn hóa đặc trưng (trung bình 0, phương sai 1)
+- Phân tích trị riêng
+- Biểu đồ Scree để chọn thành phần
+- Phân tích phương sai tích lũy
+- Giảm chiều về k thành phần tối ưu
+
+## Kết quả
+
+- Tỷ lệ phương sai giải thích cho mỗi thành phần
+- Phương sai tích lũy được bảo toàn
+- Hiệu suất phân loại trước/sau PCA
+- Trực quan hóa 2D/3D trong không gian thành phần chính
+- Lọc nhiễu và giảm chi phí tính toán
+
+## Sử dụng
+
+```bash
+jupyter notebook pca.ipynb
+```

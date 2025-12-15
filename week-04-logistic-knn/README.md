@@ -1,67 +1,83 @@
 # Week 4: Logistic Regression and K-Nearest Neighbors
 
+**English** | [Tiếng Việt](#tiếng-việt)
+
 ## Overview
 
-Implementation of two fundamental classification algorithms: Logistic Regression for probabilistic binary classification and K-Nearest Neighbors (KNN) for instance-based learning.
+Two fundamental classification algorithms: Logistic Regression for probabilistic binary classification and K-Nearest Neighbors (KNN) for instance-based learning.
 
-## Algorithms
+## Dataset
 
-**Logistic Regression:**
-- Sigmoid function: σ(z) = 1 / (1 + e^(-z))
-- Log-loss cost function
-- Gradient descent optimization
-- Probabilistic predictions
-
-**K-Nearest Neighbors:**
-- Distance-based classification
-- Euclidean distance metric
-- Majority voting for prediction
-- No explicit training phase
-
-## Datasets
-
-**1. Banking Dataset**
-- Binary classification: Customer subscription prediction
-- Multiple features: Age, balance, campaign contacts
-- Imbalanced classes handling
-
-**2. Framingham Heart Study**
-- Medical diagnosis: 10-year CHD risk prediction
-- Clinical and lifestyle features
-- Binary outcome classification
-
-**3. Admission Prediction**
-- University admission probability
-- Features: GRE, TOEFL, CGPA, research experience
-- Regression and classification variants
-
-## Implementation Details
-
-**Logistic Regression:**
-- Feature scaling with StandardScaler
-- Cross-entropy loss minimization
-- Decision boundary visualization
-- Probability threshold tuning
-
-**KNN:**
-- Optimal k selection using cross-validation
-- Distance metric comparison
-- Feature normalization importance
-- Computational complexity analysis
-
-## Results
-
-Comparative analysis:
-- Accuracy, Precision, Recall, F1-Score
-- ROC curve and AUC
-- Confusion matrix analysis
-- Training vs inference time comparison
+- **Banking**: Customer subscription prediction, multiple features
+- **Framingham**: 10-year CHD risk prediction, medical features
+- **Admission**: University admission probability prediction
 
 ## Key Concepts
 
-- Sigmoid activation function
-- Maximum likelihood estimation
-- Distance metrics in feature space
-- Bias-variance tradeoff
-- Curse of dimensionality (KNN)
-- Model interpretability comparison
+- Sigmoid function and log-loss
+- Gradient descent optimization
+- Distance-based classification
+- Euclidean distance and majority voting
+- Model interpretability and bias-variance tradeoff
+
+## Implementation
+
+- Logistic regression with gradient descent
+- KNN with optimal k selection via cross-validation
+- Feature scaling with StandardScaler
+- ROC curve and AUC analysis
+
+## Results
+
+- Accuracy, Precision, Recall, F1-Score
+- ROC curve and AUC comparison
+- Confusion matrix analysis
+- Training vs inference time comparison
+
+## Usage
+
+```bash
+jupyter notebook logistic_knn.ipynb
+```
+
+---
+
+## Tiếng Việt
+
+## Tổng quan
+
+Hai thuật toán phân loại cơ bản: Hồi quy Logistic cho phân loại nhị phân xác suất và K-Láng giềng gần nhất (KNN) cho học tập dựa trên mẫu.
+
+## Dữ liệu
+
+- **Ngân hàng**: Dự đoán đăng ký khách hàng, nhiều đặc trưng
+- **Framingham**: Dự đoán nguy cơ CHD 10 năm, đặc trưng y tế
+- **Nhập học**: Dự đoán xác suất nhập học đại học
+
+## Khái niệm chính
+
+- Hàm sigmoid và log-loss
+- Tối ưu hóa gradient descent
+- Phân loại dựa trên khoảng cách
+- Khoảng cách Euclidean và bỏ phiếu đa số
+- Khả năng giải thích mô hình và đánh đổi bias-variance
+
+## Triển khai
+
+- Hồi quy logistic với gradient descent
+- KNN với lựa chọn k tối ưu qua cross-validation
+- Chuẩn hóa đặc trưng với StandardScaler
+- Phân tích đường cong ROC và AUC
+
+## Kết quả
+
+- Độ chính xác, Precision, Recall, F1-Score
+- So sánh đường cong ROC và AUC
+- Phân tích confusion matrix
+- So sánh thời gian huấn luyện và dự đoán
+
+## Sử dụng
+
+```bash
+jupyter notebook logistic_knn.ipynb
+```
