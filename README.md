@@ -33,7 +33,7 @@ cd Machine-Learning-MAT3533
 pip install -r requirements.txt
 ```
 
-## Technologies
+## Libraries:
 
 Python 3.8+, NumPy, Pandas, Matplotlib, Scikit-learn, CVXOPT
 
@@ -79,7 +79,7 @@ cd Machine-Learning-MAT3533
 pip install -r requirements.txt
 ```
 
-## Công nghệ
+## Thư viện được sử dụng:
 
 Python 3.8+, NumPy, Pandas, Matplotlib, Scikit-learn, CVXOPT
 
