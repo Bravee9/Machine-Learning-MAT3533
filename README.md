@@ -1,4 +1,4 @@
-# Machine Learning Fundamentals
+# Machine Learning
 
 **English** | [Tiếng Việt](#tiếng-việt)
 
@@ -93,4 +93,4 @@ jupyter notebook notebook_name.ipynb
 ## Tác giả
 
 **Bui Quang Chien** - Student ID: 23001837  
-VNU University of Science, Hanoi
+Trường Đại học Khoa học Tự nhiên - Đại học Quốc gia Hà Nội
