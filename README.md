@@ -1,31 +1,98 @@
-# Machine Learning
+<div align="center">
 
-**English** | [Tiếng Việt](#tiếng-việt)
+# Machine Learning — MAT3533
 
-Comprehensive implementation of fundamental machine learning algorithms from probability-based methods to deep neural networks and clustering techniques.
+### Hanoi University of Science, VNU | 2025–2026
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
+
+</div>
+
+**English** | [Tiếng Việt](README.vi.md)
+
+---
 
 ## Overview
 
-12 weeks of practical ML implementations. Course materials from VNU University of Science, Hanoi - Machine Learning (MAT 3533) - Academic Year 2025-2026.
+Comprehensive, hands-on implementations of fundamental machine learning algorithms spanning **12 weeks of practical work** — from probability-based classifiers to deep neural networks and clustering techniques.
+
+Course: **Machine Learning (MAT 3533)** — VNU University of Science, Hanoi | Academic Year 2025–2026.
+
+Each week includes a Jupyter Notebook with fully documented implementations, covering theory and experiments on real-world datasets.
+
+---
 
 ## Course Structure
 
 | Week | Topic | Algorithms | Key Dataset |
-|------|-------|-----------|-------------|
-| 1 | Probability Classification | Gaussian Naive Bayes | Email Spam (4601 samples) |
-| 2 | Binary Classification | Bernoulli Naive Bayes | Medical Diagnosis |
-| 3 | Regression | Linear Regression | SAT-GPA Prediction |
-| 4 | Classification Methods | Logistic Regression, KNN | Banking, Admission |
-| 5 | Advanced Classifiers | SVM, Decision Trees | MNIST, Iris, Glass |
-| 6 | Dimensionality Reduction | PCA | Parkinson's Speech (754 features) |
-| 7 | Linear Discriminant | LDA | MNIST, Face Recognition |
-| 8 | Neural Network Basics | Perceptron | Sonar (Rock vs Mine) |
-| 9 | Deep Learning | Multi-Layer Perceptron | Dry Bean (7 classes) |
-| 10 | Distance Clustering | K-Means, DBSCAN | MNIST, Synthetic Data |
-| 11 | Probabilistic Clustering | Gaussian Mixture Model | Iris, Shopping Data |
-| 12 | Hard Margin SVM | SVM with CVXOPT | Breast Cancer, Sonar |
+|:----:|-------|-----------|-------------|
+| **01** | Probability Classification | Gaussian Naive Bayes | Email Spam (4601 samples) |
+| **02** | Binary Classification | Bernoulli Naive Bayes | Medical Diagnosis |
+| **03** | Regression | Linear Regression | SAT-GPA Prediction |
+| **04** | Classification Methods | Logistic Regression, KNN | Banking, Admission |
+| **05** | Advanced Classifiers | SVM, Decision Trees | MNIST, Iris, Glass |
+| **06** | Dimensionality Reduction | PCA | Parkinson's Speech (754 features) |
+| **07** | Linear Discriminant | LDA | MNIST, Face Recognition |
+| **08** | Neural Network Basics | Perceptron | Sonar (Rock vs Mine) |
+| **09** | Deep Learning | Multi-Layer Perceptron | Dry Bean (7 classes) |
+| **10** | Distance Clustering | K-Means, DBSCAN | MNIST, Synthetic Data |
+| **11** | Probabilistic Clustering | Gaussian Mixture Model | Iris, Shopping Data |
+| **12** | Hard Margin SVM | SVM with CVXOPT | Breast Cancer, Sonar |
 
-## Installation
+---
+
+## Highlights
+
+**From-Scratch Implementations**
+- Gaussian Naive Bayes — built from probability fundamentals
+- Bernoulli Naive Bayes — binary feature classification
+- Perceptron — single-layer neural network from scratch
+- Multi-Layer Perceptron (MLP) — forward/back-propagation without frameworks
+- K-Means & GMM — custom clustering implementations
+- **Hard Margin SVM solved via CVXOPT quadratic programming** (Week 12)
+
+**Notable Technical Work**
+- PCA applied to the Parkinson's Speech dataset with **754 features** — dimensionality reduction to visualizable space
+- MNIST digit classification tackled with multiple algorithms (SVM, LDA, K-Means, MLP)
+- GMM with Expectation-Maximization on Iris and real shopping data
+
+---
+
+## Project Structure
+
+```
+├── week-01-naive-bayes/        Gaussian Naive Bayes — Email Spam
+├── week-02-bernoulli-nb/       Bernoulli Naive Bayes — Medical Diagnosis
+├── week-03-linear-regression/  Linear Regression — SAT-GPA
+├── week-04-logistic-knn/       Logistic Regression & KNN — Banking, Admission
+├── week-05-svm-decision-tree/  SVM & Decision Trees — MNIST, Iris, Glass
+├── week-06-pca/                PCA — Parkinson's Speech (754 features)
+├── week-07-lda/                LDA — MNIST, Face Recognition
+├── week-08-perceptron/         Perceptron — Sonar (Rock vs Mine)
+├── week-09-mlp/                Multi-Layer Perceptron — Dry Bean
+├── week-10-kmean-dbscan/       K-Means & DBSCAN — MNIST, Synthetic Data
+├── week-11-gmm/                Gaussian Mixture Model — Iris, Shopping
+└── week-12-svm/                Hard Margin SVM (CVXOPT) — Breast Cancer, Sonar
+```
+
+---
+
+## Tech Stack
+
+| Category | Tools |
+|----------|-------|
+| Language | Python 3.8+ |
+| Core Libraries | NumPy, Pandas, Matplotlib, Scikit-learn |
+| Optimization | CVXOPT |
+| Environment | Jupyter Notebook, Google Colab |
+
+---
+
+## Quick Start
 
 ```bash
 git clone https://github.com/Bravee9/Machine-Learning-MAT3533.git
@@ -33,12 +100,7 @@ cd Machine-Learning-MAT3533
 pip install -r requirements.txt
 ```
 
-## Libraries:
-
-Python 3.8+, NumPy, Pandas, Matplotlib, Scikit-learn, CVXOPT
-
-## Usage
-
+Open any notebook:
 ```bash
 cd week-XX-topic
 jupyter notebook notebook_name.ipynb
@@ -46,51 +108,10 @@ jupyter notebook notebook_name.ipynb
 
 ---
 
-## Tiếng Việt
+## Author
 
-Bộ tài liệu thực hành đầy đủ các thuật toán Machine Learning cơ bản, từ phương pháp xác suất đến mạng neural sâu và phân cụm.
+**Bùi Quang Chiến** — MSSV 23001837  
+Computer Science, Hanoi University of Science — VNU  
 
-## Tổng quan
-
-12 tuần thực hành ML. Tài liệu từ Đại học Khoa học Tự nhiên, ĐHQG Hà Nội - Machine Learning (MAT 3533) - Năm học 2025-2026.
-
-## Cấu trúc khóa học
-
-| Tuần | Chủ đề | Thuật toán | Dữ liệu chính |
-|------|---------|-----------|---------------|
-| 1 | Phân loại xác suất | Gaussian Naive Bayes | Email Spam (4601 mẫu) |
-| 2 | Phân loại nhị phân | Bernoulli Naive Bayes | Chẩn đoán y tế |
-| 3 | Hồi quy | Linear Regression | Dự đoán SAT-GPA |
-| 4 | Phương pháp phân loại | Logistic Regression, KNN | Banking, Tuyển sinh |
-| 5 | Bộ phân loại nâng cao | SVM, Decision Trees | MNIST, Iris, Glass |
-| 6 | Giảm chiều dữ liệu | PCA | Giọng nói Parkinson (754 đặc trưng) |
-| 7 | Phân biệt tuyến tính | LDA | MNIST, Nhận dạng khuôn mặt |
-| 8 | Cơ bản mạng neural | Perceptron | Sonar (Đá vs Mìn) |
-| 9 | Học sâu | Multi-Layer Perceptron | Dry Bean (7 lớp) |
-| 10 | Phân cụm khoảng cách | K-Means, DBSCAN | MNIST, Dữ liệu tổng hợp |
-| 11 | Phân cụm xác suất | Gaussian Mixture Model | Iris, Shopping |
-| 12 | Hard Margin SVM | SVM với CVXOPT | Ung thư vú, Sonar |
-
-## Cài đặt
-
-```bash
-git clone https://github.com/Bravee9/Machine-Learning-MAT3533.git
-cd Machine-Learning-MAT3533
-pip install -r requirements.txt
-```
-
-## Thư viện được sử dụng:
-
-Python 3.8+, NumPy, Pandas, Matplotlib, Scikit-learn, CVXOPT
-
-## Sử dụng
-
-```bash
-cd week-XX-topic
-jupyter notebook notebook_name.ipynb
-```
-
-## Tác giả
-
-**Bui Quang Chien** - Student ID: 23001837  
-Trường Đại học Khoa học Tự nhiên - Đại học Quốc gia Hà Nội
+[![GitHub](https://img.shields.io/badge/GitHub-Bravee9-181717?style=flat-square&logo=github)](https://github.com/Bravee9)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Brave9-0A66C2?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/brave9/)
